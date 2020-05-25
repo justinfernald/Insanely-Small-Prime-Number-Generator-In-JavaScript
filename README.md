@@ -26,6 +26,12 @@ The for loop feeds i values into the prime checker where it starts with a value 
 I know the explanation was wordy and probably has typos and grammatical mistakes, but this was all for fun and I hope that it maybe taught you something new, because in the fews hours I spent on this I sure did. (I learned that I should ever do something like this again, because it is pointless.)
 
 -----
+### Motivation
+Why did I do this? (Because I am dumb and had something better to do and I just didn't know what that was)
 
+and this
 
-Feel free to make Pull requests on upgrades for smaller versions
+![Image of Discord Conversation](https://i.imgur.com/0ctULZm.png)
+
+-----
+Feel free to make Pull requests on upgrades for a better prime number generator
