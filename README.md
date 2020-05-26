@@ -6,14 +6,14 @@ Currently the smallest from what I have seen, but would not be surprised if ther
 -----
 ### Progression
 ```javascript
-for(i=2;;i++)if([...Array(i).keys()].every(x=>i%x!=0||1==x))console.log(i)
-for(i=2;;i++)[...Array(i).keys()].every(x=>i%x!=0||1==x)&&console.log(i)
-for(i=2;;i++)[...Array(i).keys()].some(x=>i%x==0&&1!=x)||console.log(i)
-for(i=2;;i++)[...Array(i)].some((_,j)=>i%j==0&&1!=j)||console.log(i)
-for(i=2;;i++)[...Array(i)].some((_,j)=>(!(i%j))&&j>2)||console.log(i)
-for(i=2;;i++)[...Array(i)].some((_,j)=>!(i%j)&&j>2)||console.log(i)
-for(i=1;;)[...Array(++i)].some((_,j)=>!(i%j)&&j>1)||console.log(i)
-for(i=1;;)[...Array(++i)].every((_,j)=>i%j||j<2)&&console.log(i)
+for(i=2;;i++)if([...Array(i).keys()].every(x=>i%x!=0||1==x))console.log(i) // 74
+for(i=2;;i++)[...Array(i).keys()].every(x=>i%x!=0||1==x)&&console.log(i) // 72
+for(i=2;;i++)[...Array(i).keys()].some(x=>i%x==0&&1!=x)||console.log(i) // 71
+for(i=2;;i++)[...Array(i)].some((_,j)=>i%j==0&&1!=j)||console.log(i) // 68 
+for(i=2;;i++)[...Array(i)].some((_,j)=>(!(i%j))&&j>2)||console.log(i) // 69
+for(i=2;;i++)[...Array(i)].some((_,j)=>!(i%j)&&j>2)||console.log(i) // 67
+for(i=1;;)[...Array(++i)].some((_,j)=>!(i%j)&&j>1)||console.log(i) // 66
+for(i=1;;)[...Array(++i)].every((_,j)=>i%j||j<2)&&console.log(i) // 64
 ```
 -----
 ### Explanation
