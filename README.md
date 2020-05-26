@@ -6,6 +6,7 @@ Currently the smallest from what I have seen, but would not be surprised if ther
 -----
 ### Progression
 ```javascript
+for(i=2;;i++)if([...Array(i).keys()].every(x=>i%x!=0||1==x))console.log(i)
 for(i=2;;i++)[...Array(i).keys()].every(x=>i%x!=0||1==x)&&console.log(i)
 for(i=2;;i++)[...Array(i).keys()].some(x=>i%x==0&&1!=x)||console.log(i)
 for(i=2;;i++)[...Array(i)].some((_,j)=>i%j==0&&1!=j)||console.log(i)
