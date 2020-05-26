@@ -48,4 +48,24 @@ and this
 ![Image of Discord Conversation](https://i.imgur.com/0ctULZm.png)
 
 -----
+### Extra
+
+I posted this to reddit and someone mentioned https://codegolf.stackexchange.com/questions/70001/list-prime-numbers which the rules are very different (mainly because I made up my own rules), but it is for making a function that returns an array of size n with n being a passed positive integer.
+
+The solution for JavaScript was (https://codegolf.stackexchange.com/a/70043/95415):
+```javascript
+n=>{for(p=[],i=2;n;i++)!p.some(c=>!(i%c))&&p.push(i)&&n--;return p} // 67
+```
+
+Which I shortened to:
+```javascript
+n=>{a=[];for(i=2;n;i++)a.every(j=>i%j)&&n--|a.push(i);return a} // 63
+```
+
+Then made another verision that returns all primes in an array under the value n:
+```javascript
+n=>{for(a=[],i=2;i<n;i++)a.every(j=>i%j)&&a.push(i);return a} // 61
+```
+
+-----
 Feel free to make Pull requests on upgrades for a better prime number generator
