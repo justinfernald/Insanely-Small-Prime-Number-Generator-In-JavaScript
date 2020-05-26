@@ -14,7 +14,7 @@ for(i=2;;i++)[...Array(i)].some((_,j)=>(!(i%j))&&j>2)||console.log(i) // 69
 for(i=2;;i++)[...Array(i)].some((_,j)=>!(i%j)&&j>2)||console.log(i) // 67
 for(i=1;;)[...Array(++i)].some((_,j)=>!(i%j)&&j>1)||console.log(i) // 66
 for(i=1;;)[...Array(++i)].every((_,j)=>i%j||j<2)&&console.log(i) // 64
-for(i=2;;i++){for(j=2;i%j!=0;j++){}i==j&&console.log(i)} // 56 - Switched up my stategy on the second day I looked at this. Sad that is doesn't use as many fancy tricks now though.
+for(i=2;;i++){for(j=2;i%j!=0;j++){}i==j&&console.log(i)} // 56 - Switched up my stategy on the second day I looked at this. I'm sad that this doesn't use as many fancy tricks now though.
 for(i=2;;i++){for(j=2;i%j;j++){}i==j&&console.log(i)} // 53
 for(i=2;;i++){for(j=2;i%j;j++){}i>j||console.log(i)} // 52
 for(i=2;;i++){for(j=2;i%j++;){}i>j||console.log(i)} // 51
