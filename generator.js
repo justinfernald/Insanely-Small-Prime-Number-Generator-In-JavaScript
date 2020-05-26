@@ -1,1 +1,1 @@
-for(i=1;;)[...Array(++i)].every((_,j)=>i%j||j<2)&&console.log(i)
+for(i=2;;i++){for(j=2;i%j++;);i>j||console.log(i)}
