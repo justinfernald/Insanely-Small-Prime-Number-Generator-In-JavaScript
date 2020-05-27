@@ -19,6 +19,9 @@ for(i=2;;i++){for(j=2;i%j;j++){}i==j&&console.log(i)} // 53
 for(i=2;;i++){for(j=2;i%j;j++){}i>j||console.log(i)} // 52
 for(i=2;;i++){for(j=2;i%j++;){}i>j||console.log(i)} // 51
 for(i=2;;i++){for(j=2;i%j++;);i>j||console.log(i)} // 50
+for(i=1;;){for(j=++i;i%--j;);--j||console.log(i)} // 49 - frambot | The rest are from Reddit in response to my post people made it smaller
+for(i=1;;j||console.log(i))for(j=i++;i%j--;); // 45 - danielgjackson
+for(i=j=0;;)i%j--||(j||console.log(i),j=i++) // 44 - danielgjackson
 ```
 -----
 ### Explanation (For old version)
@@ -32,7 +35,7 @@ The for loop feeds i values into the prime checker where it starts with a value 
 I know the explanation was wordy and probably has typos and grammatical mistakes, but this was all for fun and I hope that it maybe taught you something new, because in the fews hours I spent on this I sure did. (I learned that I should ever do something like this again, because it is pointless.)
 
 -----
-### Explanation
+### Explanation (For my last one)
 The new method is a lot smaller when I worked on this the next day, but it is a lot less satisfying since it doesn't use as many tricks, but I guess the basics really can not be beaten.
 ```javascript
 for(i=2;;i++){for(j=2;i%j++;);i>j||console.log(i)}
@@ -50,6 +53,8 @@ and this
 -----
 ### Extra
 
+Reddit post: https://www.reddit.com/r/javascript/comments/gqoxwh/making_the_shortest_prime_number_generator_in/frwxjo2/?context=8&depth=9 
+
 I posted this to reddit and someone mentioned https://codegolf.stackexchange.com/questions/70001/list-prime-numbers which the rules are very different (mainly because I made up my own rules), but it is for making a function that returns an array of size n with n being a passed positive integer.
 
 The solution for JavaScript was (https://codegolf.stackexchange.com/a/70043/95415):
@@ -64,7 +69,7 @@ n=>{a=[];for(i=2;n;i++)a.every(j=>i%j)&&n--|a.push(i);return a} // 63
 
 Then made another verision that returns all primes in an array under the value n:
 ```javascript
-n=>{for(a=[],i=2;i<n;i++)a.every(j=>i%j)&&a.push(i);return a} // 61
+n=>a=[];{for(i=2;i<n;i++)a.every(j=>i%j)&&a.push(i);return a} // 61
 ```
 
 -----
